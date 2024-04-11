@@ -1,0 +1,181 @@
+*{
+    font-family: 'Gilroy';
+}
+
+.login-sec{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-sec .cont-media{
+    width: 300px;
+    height: 400px;
+    background: rgb(255,255,255);
+    background: linear-gradient(164deg, rgba(255,255,255,1) 0%, rgb(255 255 255) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.034);
+    border: #686868 solid 1px;
+    border-radius: 6px;
+}
+
+.login-sec .cont-media .p-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.p-logo .logo{
+    width: 25%;
+}
+
+
+.form .e-mail-inpt{
+    margin-top: 40px;
+    border: none;
+    position: relative;
+    z-index: 0;
+    width: 200px;
+    height: 37px;
+    border: #adadad solid .1mm;
+    border-radius: 3px;
+    background-color: #f8f7f7;
+    transition: all ease-in-out .3s;
+}
+
+.form .e-mail-inpt::-webkit-input-placeholder{
+    position: absolute;
+    top: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    transition: all ease-in-out .3s;
+}
+
+.form .e-mail-inpt:focus-visible{
+    border-radius: 10px;
+    border-bottom: solid #010101 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+    outline: none;
+}
+
+.form .e-mail-inpt:focus::-webkit-input-placeholder{
+    color: #010101;
+    top: 3px;
+    font-size: 11px;
+}
+
+.form .pass-inpt{
+    margin-top: 10px;
+    position: relative;
+    z-index: 0;
+    width: 200px;
+    height: 37px;
+    border: #adadad solid .1mm;
+    border-radius: 3px;
+    background-color: #f8f7f7;
+    transition: all ease-in-out .3s;
+}
+
+.form .pass-inpt::-webkit-input-placeholder{
+    position: absolute;
+    top: 10px;
+    transition: all ease-in-out .3s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.form .pass-inpt:focus-visible{
+    border-radius: 10px;
+    border-bottom: solid #010101 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+    outline: none;
+}
+
+.form .pass-inpt:focus::-webkit-input-placeholder{
+    color: #010101;
+    top: 3px;
+    font-size: 11px;
+}
+
+.l-parent .shpass{
+    margin-left: -70px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #010101;
+}
+
+.submit{
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border: solid #979797 1px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #2db1ff;
+    transition: all ease-in-out .2s;
+}
+
+.submit:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+}
+
+.p-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-border .border{
+    width: 90%;
+    border-bottom: #686868 solid .5px !important;
+    margin-top: 8px;
+}
+
+
+@media (min-width:200px) {
+    .login-sec .cont-media{
+        width: 241px;
+        height: 343px;
+    }
+    .form .e-mail-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .form .pass-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:768px) {
+    .login-sec .cont-media{
+        width: 288px;
+        height: 373px;
+    }
+    .form .e-mail-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .form .pass-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:992px) {
+    .login-sec .cont-media{
+        width: 300px;
+        height: 400px;
+    }
+    .form .e-mail-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .form .pass-inpt::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}

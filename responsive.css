@@ -1,0 +1,150 @@
+
+/**media queries**/
+
+@media screen and (min-width:900px) {
+   
+    section {
+       padding: 7.9rem;
+    }
+    
+    .menu-toggle {
+       display: none;
+    }
+    
+    .nav {
+       justify-content: space-between;
+    }
+    
+    .nav-list {
+       position: initial;
+       width: initial;
+       height: initial;
+       background-color: transparent;
+       padding: 0;
+       justify-content: initial;
+       flex-direction: row;
+       transform: initial;
+       transition: initial;
+    }
+    
+    .nav-item {
+       margin: 0 2.4rem;
+       border: none;
+    }
+    
+    .nav-item:last-child {
+       margin-right: 0;
+    }
+    
+    .nav-link {
+       font-size: 1.3rem;
+    }
+    
+    .active {
+       position: relative;
+    }
+    
+    .active::before {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 2px;
+       background-color: #fff;
+       left: 0;
+       bottom: -3px;
+    }
+    
+    .sub-headline {
+       font-size: 10rem;
+    }
+    
+    .first-letter {
+       font-size: 12.2rem;
+    }
+    
+    .headline {
+       font-size: 4.7rem;
+       letter-spacing: .8rem;
+    }
+    
+    .line {
+       max-width: 11.4rem;
+    }
+    
+    .restaurant-info {
+       display: flex;
+       align-items: center;
+    }
+    
+    .restaurant-info > div {
+       flex: 1;
+    }
+    
+    .padding-right {
+       padding-right: 7rem;
+    }
+    
+    .footer-content {
+       max-width: 77.5rem;
+       margin: auto;
+    }
+    
+    .footer-content-about {
+       max-width: 51.3rem;
+       margin: 0 auto 5.4rem;
+    }
+    
+    .footer-content-divider {
+       display: flex;
+       justify-content: space-between;
+    }
+    
+    .social-media,
+    .newsletter-form {
+       width: 100%;
+       max-width: 27.3rem;
+       margin: 0 1rem;
+    }
+    
+    .social-icons i {
+       opacity: 1;
+    }
+    
+    .newsletter-btn {
+       margin-left: 7.5rem;
+    }
+    
+ }
+ 
+
+ /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  
+@media screen and (max-width:375px) {
+    .col-lg-4{
+       width: 100%;
+    }
+    .services{
+       display: block;
+    }
+    .end{
+      display: block !important;
+     }
+    
+     .cont-fields{
+       width: 100% !important;
+     }
+ }
+ 
+
+ @media screen and (max-width:768px) {
+    .second{
+       display: block !important;
+     }
+    .first{
+       display: none;
+    }
+ }
